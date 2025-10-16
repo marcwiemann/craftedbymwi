@@ -50,15 +50,12 @@ export default function HomePage() {
                     Marc Wiemann
                   </span>
                 </h1>
-                <p className="text-xl sm:text-2xl text-text-secondary font-medium">
-                  Full-Stack Developer & Designer
+                <p className="text-xl sm:text-2xl text-muted font-medium">
+                  Full-Stack Developer & Tech Enthusiast
                 </p>
               </div>
-              <p className="text-lg text-text-secondary leading-relaxed max-w-xl">
-                Ich entwickle moderne und benutzerfreundliche Web-Anwendungen mit
-                Fokus auf Performance, Skalierbarkeit und exzellenter User Experience.
-                Meine Leidenschaft ist es, komplexe Probleme in einfache, elegante
-                Lösungen zu verwandeln.
+              <p className="text-lg text-muted leading-relaxed max-w-xl">Ich entwickle moderne und benutzerfreundliche Web-Anwendungen mit Fokus auf Performance, Skalierbarkeit und exzellenter User Experience.
+                Meine Leidenschaft ist es, komplexe Probleme in einfache, elegante Lösungen zu verwandeln.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link

@@ -76,7 +76,7 @@ export default function ProjectsPage() {
           <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6">
             Meine Projekte
           </h1>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-xl text-muted max-w-3xl mx-auto">
             Eine Auswahl meiner neuesten Arbeiten und Side-Projects. Jedes Projekt
             zeigt meine Leidenschaft für sauberen Code, modernes Design und
             herausragende User Experience.
@@ -107,7 +107,7 @@ export default function ProjectsPage() {
                   <h3 className="text-2xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-text-secondary mb-6 leading-relaxed">
+                  <p className="text-muted mb-6 leading-relaxed">
                     {project.description}
                   </p>
 
@@ -116,7 +116,7 @@ export default function ProjectsPage() {
                     {project.tags.map((tag, index) => (
                       <span
                         key={index}
-                        className="px-3 py-1 bg-secondary text-text-secondary text-sm rounded-lg border border-border"
+                        className="px-3 py-1 bg-secondary text-muted text-sm rounded-lg border border-border"
                       >
                         {tag}
                       </span>
@@ -173,7 +173,7 @@ export default function ProjectsPage() {
                   <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-text-secondary mb-4 line-clamp-3">
+                  <p className="text-sm text-muted mb-4 line-clamp-3">
                     {project.description}
                   </p>
 
@@ -182,13 +182,13 @@ export default function ProjectsPage() {
                     {project.tags.slice(0, 3).map((tag, index) => (
                       <span
                         key={index}
-                        className="px-2 py-1 bg-secondary text-text-secondary text-xs rounded border border-border"
+                        className="px-2 py-1 bg-secondary text-muted text-xs rounded border border-border"
                       >
                         {tag}
                       </span>
                     ))}
                     {project.tags.length > 3 && (
-                      <span className="px-2 py-1 bg-secondary text-text-secondary text-xs rounded border border-border">
+                      <span className="px-2 py-1 bg-secondary text-muted text-xs rounded border border-border">
                         +{project.tags.length - 3}
                       </span>
                     )}
@@ -226,7 +226,7 @@ export default function ProjectsPage() {
           <h2 className="text-3xl font-bold text-foreground mb-4">
             Interessiert an einer Zusammenarbeit?
           </h2>
-          <p className="text-text-secondary mb-8 max-w-2xl mx-auto">
+          <p className="text-muted mb-8 max-w-2xl mx-auto">
             Ich bin immer offen für neue Projekte und spannende Herausforderungen.
             Lass uns gemeinsam etwas Großartiges schaffen!
           </p>

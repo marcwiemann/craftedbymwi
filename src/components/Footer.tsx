@@ -53,8 +53,8 @@ export default function Footer() {
                 Marc Wiemann
               </span>
             </div>
-            <p className="text-sm text-text-secondary max-w-xs">
-              Full-Stack Developer & Designer. Crafting beautiful and functional web experiences with modern technologies.
+            <p className="text-sm text-muted max-w-xs">
+              Full-Stack Developer. Crafting beautiful and functional web experiences with modern technologies.
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-sm text-text-secondary hover:text-accent transition-colors"
+                    className="text-sm text-muted hover:text-accent transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -104,7 +104,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-border text-center">
-          <p className="text-sm text-text-secondary">
+          <p className="text-sm text-muted">
             © {currentYear} Marc Wiemann. Alle Rechte vorbehalten.
           </p>
         </div>

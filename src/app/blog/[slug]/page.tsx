@@ -64,7 +64,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {/* Back Link */}
         <Link
           href="/blog"
-          className="inline-flex items-center gap-2 text-text-secondary hover:text-accent transition-colors mb-8 group"
+          className="inline-flex items-center gap-2 text-muted hover:text-accent transition-colors mb-8 group"
         >
           <ArrowLeftIcon className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
           Zurück zum Blog
@@ -77,7 +77,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <Link
                 key={index}
                 href={`/blog?tag=${tag.toLowerCase()}`}
-                className="px-3 py-1 bg-secondary hover:bg-accent hover:text-white text-text-secondary text-sm rounded-lg border border-border transition-all"
+                className="px-3 py-1 bg-secondary hover:bg-accent hover:text-white text-muted text-sm rounded-lg border border-border transition-all"
               >
                 {tag}
               </Link>
@@ -88,12 +88,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             {post.title}
           </h1>
 
-          <p className="text-xl text-text-secondary mb-8 leading-relaxed">
+          <p className="text-xl text-muted mb-8 leading-relaxed">
             {post.description}
           </p>
 
           {/* Meta Information */}
-          <div className="flex flex-wrap gap-6 text-sm text-text-secondary pb-8 border-b border-border">
+          <div className="flex flex-wrap gap-6 text-sm text-muted pb-8 border-b border-border">
             <div className="flex items-center gap-2">
               <UserIcon className="h-5 w-5" />
               <span>{post.author}</span>
@@ -117,7 +117,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {/* Share & Navigation */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-6 pt-8 border-t border-border">
           <div className="text-center sm:text-left">
-            <p className="text-sm text-text-secondary mb-2">Artikel teilen</p>
+            <p className="text-sm text-muted mb-2">Artikel teilen</p>
             <div className="flex gap-3">
               <a
                 href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(`https://marcwiemann.de/blog/${post.slug}`)}`}

@@ -17,7 +17,7 @@ export default function BlogPage() {
           <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6">
             Blog
           </h1>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-xl text-muted max-w-3xl mx-auto">
             Gedanken, Tutorials und Einblicke über Web-Entwicklung, Design und
             moderne Technologien.
           </p>
@@ -59,7 +59,7 @@ export default function BlogPage() {
                     <span className="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full border border-accent/20">
                       Featured
                     </span>
-                    <span className="text-sm text-text-tertiary">
+                    <span className="text-sm text-subtle">
                       {formatDate(post.date)}
                     </span>
                   </div>
@@ -68,11 +68,11 @@ export default function BlogPage() {
                     {post.title}
                   </h3>
 
-                  <p className="text-text-secondary mb-6 leading-relaxed">
+                  <p className="text-muted mb-6 leading-relaxed">
                     {post.description}
                   </p>
 
-                  <div className="flex flex-wrap items-center gap-4 text-sm text-text-secondary">
+                  <div className="flex flex-wrap items-center gap-4 text-sm text-muted">
                     <div className="flex items-center gap-1">
                       <ClockIcon className="h-4 w-4" />
                       <span>{post.readingTime} min read</span>
@@ -100,7 +100,7 @@ export default function BlogPage() {
                 href={`/blog/${post.slug}`}
                 className="glass-strong rounded-xl p-6 border border-border hover:border-accent hover:scale-105 transition-all duration-300 group block"
               >
-                <div className="text-sm text-text-tertiary mb-3">
+                <div className="text-sm text-subtle mb-3">
                   {formatDate(post.date)}
                 </div>
 
@@ -108,7 +108,7 @@ export default function BlogPage() {
                   {post.title}
                 </h3>
 
-                <p className="text-sm text-text-secondary mb-4 line-clamp-3">
+                <p className="text-sm text-muted mb-4 line-clamp-3">
                   {post.description}
                 </p>
 
@@ -116,14 +116,14 @@ export default function BlogPage() {
                   {post.tags.slice(0, 3).map((tag, index) => (
                     <span
                       key={index}
-                      className="px-2 py-1 bg-secondary text-text-secondary text-xs rounded border border-border"
+                      className="px-2 py-1 bg-secondary text-muted text-xs rounded border border-border"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex items-center gap-1 text-sm text-text-tertiary">
+                <div className="flex items-center gap-1 text-sm text-subtle">
                   <ClockIcon className="h-4 w-4" />
                   <span>{post.readingTime} min read</span>
                 </div>
@@ -137,7 +137,7 @@ export default function BlogPage() {
           <h2 className="text-3xl font-bold text-foreground mb-4">
             Bleib auf dem Laufenden
           </h2>
-          <p className="text-text-secondary mb-8 max-w-2xl mx-auto">
+          <p className="text-muted mb-8 max-w-2xl mx-auto">
             Erhalte die neuesten Artikel direkt in dein Postfach. Kein Spam,
             versprochen!
           </p>

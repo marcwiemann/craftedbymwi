@@ -102,7 +102,7 @@ export default function ContactPage() {
           <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-6">
             Kontakt
           </h1>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-xl text-muted max-w-3xl mx-auto">
             Hast du Fragen, ein Projekt im Sinn oder möchtest einfach nur Hallo sagen?
             Ich freue mich auf deine Nachricht!
           </p>
@@ -124,12 +124,12 @@ export default function ContactPage() {
               {info.href ? (
                 <a
                   href={info.href}
-                  className="text-text-secondary hover:text-accent transition-colors"
+                  className="text-muted hover:text-accent transition-colors"
                 >
                   {info.content}
                 </a>
               ) : (
-                <p className="text-text-secondary">{info.content}</p>
+                <p className="text-muted">{info.content}</p>
               )}
             </div>
           ))}
@@ -235,7 +235,7 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold text-foreground mb-6">
                 Folge mir
               </h2>
-              <p className="text-text-secondary mb-6">
+              <p className="text-muted mb-6">
                 Verbinde dich mit mir auf Social Media und bleib auf dem Laufenden
                 über neue Projekte und Artikel.
               </p>
@@ -263,11 +263,11 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                  <span className="text-text-secondary">
+                  <span className="text-muted">
                     Aktuell verfügbar für neue Projekte
                   </span>
                 </div>
-                <p className="text-text-secondary text-sm">
+                <p className="text-muted text-sm">
                   Ich antworte in der Regel innerhalb von 24 Stunden. Für dringende
                   Anfragen kannst du mich auch direkt per E-Mail oder Telefon erreichen.
                 </p>
@@ -279,12 +279,12 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold text-foreground mb-6">
                 Häufige Fragen
               </h2>
-              <div className="space-y-4 text-sm">
+                            <div className="space-y-4 text-sm">
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">
                     Wie lange dauert ein typisches Projekt?
                   </h3>
-                  <p className="text-text-secondary">
+                  <p className="text-muted">
                     Die Dauer variiert je nach Umfang, typischerweise zwischen 2-12 Wochen.
                   </p>
                 </div>
@@ -292,7 +292,7 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-foreground mb-2">
                     Arbeitest du remote?
                   </h3>
-                  <p className="text-text-secondary">
+                  <p className="text-muted">
                     Ja, ich arbeite hauptsächlich remote, bin aber auch für persönliche
                     Meetings verfügbar.
                   </p>
@@ -301,7 +301,7 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-foreground mb-2">
                     Welche Technologien nutzt du?
                   </h3>
-                  <p className="text-text-secondary">
+                  <p className="text-muted">
                     Hauptsächlich React, Next.js, TypeScript, Node.js und moderne
                     Cloud-Technologien.
                   </p>

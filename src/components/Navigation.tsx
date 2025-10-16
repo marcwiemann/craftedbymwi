@@ -29,7 +29,7 @@ export default function Navigation() {
               <span className="text-white font-bold text-lg">MW</span>
             </div>
             <span className="font-semibold text-lg text-foreground hidden sm:block">
-              Marc Wiemann
+              CraftedByMWI
             </span>
           </Link>
 
@@ -47,7 +47,7 @@ export default function Navigation() {
                     'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200',
                     isActive
                       ? 'bg-accent text-white'
-                      : 'text-text-secondary hover:text-foreground hover:bg-secondary'
+                      : 'text-muted hover:text-foreground hover:bg-secondary'
                   )}
                 >
                   {item.name}
@@ -103,7 +103,7 @@ export default function Navigation() {
                     'block px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200',
                     isActive
                       ? 'bg-accent text-white'
-                      : 'text-text-secondary hover:text-foreground hover:bg-secondary'
+                      : 'text-muted hover:text-foreground hover:bg-secondary'
                   )}
                 >
                   {item.name}

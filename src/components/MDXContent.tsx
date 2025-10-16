@@ -47,7 +47,7 @@ const components = {
   p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
     <p
       className={cn(
-        'text-text-secondary leading-relaxed mb-6',
+        'text-muted leading-relaxed mb-6',
         className
       )}
       {...props}
@@ -56,7 +56,7 @@ const components = {
   ul: ({ className, ...props }: React.HTMLAttributes<HTMLUListElement>) => (
     <ul
       className={cn(
-        'list-disc list-inside mb-6 space-y-2 text-text-secondary',
+        'list-disc list-inside mb-6 space-y-2 text-muted',
         className
       )}
       {...props}
@@ -65,7 +65,7 @@ const components = {
   ol: ({ className, ...props }: React.HTMLAttributes<HTMLOListElement>) => (
     <ol
       className={cn(
-        'list-decimal list-inside mb-6 space-y-2 text-text-secondary',
+        'list-decimal list-inside mb-6 space-y-2 text-muted',
         className
       )}
       {...props}
@@ -80,7 +80,7 @@ const components = {
   blockquote: ({ className, ...props }: React.HTMLAttributes<HTMLQuoteElement>) => (
     <blockquote
       className={cn(
-        'border-l-4 border-accent pl-6 italic my-6 text-text-secondary',
+        'border-l-4 border-accent pl-6 italic my-6 text-muted',
         className
       )}
       {...props}
