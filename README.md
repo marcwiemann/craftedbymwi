@@ -1,374 +1,182 @@
-# CraftedByMWI - Portfolio & Blog# CraftedByMWI - Portfolio & Blog
+# CraftedByMWI - Portfolio & Blog
 
+Ein modernes Portfolio und Blog im Apple-Design-Stil, gebaut mit Next.js 15, TypeScript und TailwindCSS.
 
+## 🎨 Features
 
-Ein modernes Portfolio und Blog im Apple-Design-Stil, gebaut mit Next.js 15, TypeScript und TailwindCSS.Ein modernes Portfolio und Blog im Apple-Design-Stil, gebaut mit Next.js 15, TypeScript und TailwindCSS.
+- **Apple-inspiriertes Design**: Minimalistisches UI mit Glassmorphism-Effekten, sanften Schatten und eleganter Typografie
+- **Dark/Light Mode**: Nahtloser Wechsel zwischen hellen und dunklen Farbschemata
+- **Responsive Design**: Optimiert für alle Bildschirmgrößen (Mobile, Tablet, Desktop)
+- **Blog mit Markdown**: Vollständige Blogging-Funktionalität mit Syntax-Highlighting
+- **Projekt-Showcase**: Interaktive Projekt-Cards mit Live-Demos und GitHub-Links
+- **Kontaktformular**: Validiertes Kontaktformular mit React Hook Form und Zod
+- **Performance**: Server Components, optimierte Bilder und schnelle Ladezeiten
+- **SEO-optimiert**: Umfassende Metadaten und Open Graph Tags
 
+## 🛠️ Tech Stack
 
-
-## 🎨 Features## 🎨 Features
-
-
-
-- **Apple-inspiriertes Design**: Minimalistisches UI mit Glassmorphism-Effekten, sanften Schatten und eleganter Typografie- **Apple-inspiriertes Design**: Minimalistisches UI mit Glassmorphism-Effekten, sanften Schatten und eleganter Typografie
-
-- **Dark/Light Mode**: Nahtloser Wechsel zwischen hellen und dunklen Farbschemata- **Dark/Light Mode**: Nahtloser Wechsel zwischen hellen und dunklen Farbschemata
-
-- **Responsive Design**: Optimiert für alle Bildschirmgrößen (Mobile, Tablet, Desktop)- **Responsive Design**: Optimiert für alle Bildschirmgrößen (Mobile, Tablet, Desktop)
-
-- **Blog mit Markdown**: Vollständige Blogging-Funktionalität mit Syntax-Highlighting- **Blog mit Markdown**: Vollständige Blogging-Funktionalität mit Syntax-Highlighting
-
-- **Projekt-Showcase**: Interaktive Projekt-Cards mit Live-Demos und GitHub-Links- **Projekt-Showcase**: Interaktive Projekt-Cards mit Live-Demos und GitHub-Links
-
-- **Kontaktformular**: Validiertes Kontaktformular mit React Hook Form und Zod- **Kontaktformular**: Validiertes Kontaktformular mit React Hook Form und Zod
-
-- **Performance**: Server Components, optimierte Bilder und schnelle Ladezeiten- **Performance**: Server Components, optimierte Bilder und schnelle Ladezeiten
-
-- **SEO-optimiert**: Umfassende Metadaten und Open Graph Tags- **SEO-optimiert**: Umfassende Metadaten und Open Graph Tags
-
-
-
-## 🛠️ Tech Stack## 🛠️ Tech Stack
-
-
-
-### Core### Core
-
+### Core
 - **Next.js 15** - React Framework mit App Router
-
-- **TypeScript** - Type-safe JavaScript- **Next.js 15** - React Framework mit App Router
-
-- **TailwindCSS v4** - Utility-first CSS Framework- **TypeScript** - Type-safe JavaScript
-
-- **React 19** - UI Library- **TailwindCSS v4** - Utility-first CSS Framework
-
+- **TypeScript** - Type-safe JavaScript
+- **TailwindCSS v4** - Utility-first CSS Framework
 - **React 19** - UI Library
 
 ### Features & Tools
-
-- **next-mdx-remote** - MDX Unterstützung für Blog-Posts### Features & Tools
-
+- **next-mdx-remote** - MDX Unterstützung für Blog-Posts
 - **gray-matter** - YAML Frontmatter Parser
-
-- **rehype-highlight** - Code Syntax-Highlighting- **next-mdx-remote** - MDX Unterstützung für Blog-Posts
-
-- **react-hook-form** - Formular-Management- **gray-matter** - YAML Frontmatter Parser
-
-- **zod** - Schema-Validierung- **rehype-highlight** - Code Syntax-Highlighting
-
-- **@heroicons/react** - Moderne Icon-Library- **react-hook-form** - Formular-Management
-
-- **clsx & tailwind-merge** - Class-Name-Utilities- **zod** - Schema-Validierung
-
+- **rehype-highlight** - Code Syntax-Highlighting
+- **react-hook-form** - Formular-Management
+- **zod** - Schema-Validierung
 - **@heroicons/react** - Moderne Icon-Library
+- **clsx & tailwind-merge** - Class-Name-Utilities
 
-## 📁 Projekt-Struktur- **clsx & tailwind-merge** - Class-Name-Utilities
+## 📁 Projekt-Struktur
 
-
-
-```## 📁 Projekt-Struktur
-
+```
 craftedbymwi/
-
-├── src/```
-
-│   ├── app/                    # Next.js App Router Pagescraftedbymwi/
-
-│   │   ├── layout.tsx          # Root Layout├── src/
-
-│   │   ├── page.tsx            # Home Page│   ├── app/                    # Next.js App Router Pages
-
-│   │   ├── blog/               # Blog Pages│   │   ├── layout.tsx          # Root Layout
-
-│   │   ├── projects/           # Projects Showcase│   │   ├── page.tsx            # Home Page
-
-│   │   └── contact/            # Contact Form│   │   ├── blog/               # Blog Pages
-
-│   ├── components/             # React Components│   │   │   ├── page.tsx        # Blog List
-
-│   ├── lib/                    # Utility Functions│   │   │   └── [slug]/         # Dynamic Blog Post
-
-│   └── content/                # Markdown Content│   │   ├── projects/           # Projects Showcase
-
-├── public/                     # Static Assets│   │   └── contact/            # Contact Form
-
-└── package.json│   ├── components/             # React Components
-
-```│   │   ├── Navigation.tsx      # Navigation Bar
-
+├── src/
+│   ├── app/                    # Next.js App Router Pages
+│   │   ├── layout.tsx          # Root Layout
+│   │   ├── page.tsx            # Home Page
+│   │   ├── blog/               # Blog Pages
+│   │   │   ├── page.tsx        # Blog List
+│   │   │   └── [slug]/         # Dynamic Blog Post
+│   │   ├── projects/           # Projects Showcase
+│   │   └── contact/            # Contact Form
+│   ├── components/             # React Components
+│   │   ├── Navigation.tsx      # Navigation Bar
 │   │   ├── Footer.tsx          # Footer Component
-
-## 🚀 Getting Started│   │   ├── ThemeProvider.tsx   # Dark Mode Provider
-
+│   │   ├── ThemeProvider.tsx   # Dark Mode Provider
 │   │   └── MDXContent.tsx      # MDX Renderer
-
-### Prerequisites│   ├── lib/                    # Utility Functions
-
-- Node.js 18.18 oder höher│   │   ├── utils.ts            # Helper Functions
-
-- npm, yarn, pnpm oder bun│   │   └── blog.ts             # Blog Utilities
-
+│   ├── lib/                    # Utility Functions
+│   │   ├── utils.ts            # Helper Functions
+│   │   └── blog.ts             # Blog Utilities
 │   └── content/                # Content
-
-### Installation│       └── blog/               # Markdown Blog Posts
-
+│       └── blog/               # Markdown Blog Posts
 ├── public/                     # Static Assets
-
-```bash│   └── images/                 # Images
-
-# Repository klonen└── package.json
-
-git clone https://github.com/yourusername/craftedbymwi.git```
-
-cd craftedbymwi
+│   └── images/                 # Images
+└── package.json
+```
 
 ## 🚀 Getting Started
 
-# Dependencies installieren
+### Prerequisites
+- Node.js 18.18 oder höher
+- npm, yarn, pnpm oder bun
 
-npm install### Prerequisites
-
-
-
-# Development Server starten- Node.js 18.18 oder höher
-
-npm run dev- npm, yarn, pnpm oder bun
-
-
-
-# Öffne http://localhost:3000### Installation
-
-```
+### Installation
 
 1. Repository klonen:
-
-## 📝 Blog Posts erstellen
-
 ```bash
-
-Blog Posts werden als Markdown-Dateien in `src/content/blog/` gespeichert:git clone https://github.com/yourusername/craftedbymwi.git
-
+git clone https://github.com/yourusername/craftedbymwi.git
 cd craftedbymwi
-
-```markdown```
-
----
-
-title: "Dein Post-Titel"2. Dependencies installieren:
-
-description: "Eine kurze Beschreibung"
-
-date: "2025-10-11"```bash
-
-author: "Marc Wiemann"npm install
-
-tags: ["Next.js", "React", "TypeScript"]# oder
-
-featured: trueyarn install
-
----# oder
-
-pnpm install
-
-# Dein Content hier```
-
-
-
-Schreibe deinen Blog-Inhalt mit Markdown...3. Development Server starten:
-
 ```
 
+2. Dependencies installieren:
 ```bash
-
-### Neue Posts hinzufügennpm run dev
-
-1. Erstelle eine neue `.md` Datei in `src/content/blog/`# oder
-
-2. Füge das Frontmatter hinzuyarn dev
-
-3. Schreibe deinen Content# oder
-
-4. Der Post erscheint automatisch in der Blog-Listepnpm dev
-
+npm install
+# oder
+yarn install
+# oder
+pnpm install
 ```
 
-## 🎨 Anpassungen
+3. Development Server starten:
+```bash
+npm run dev
+# oder
+yarn dev
+# oder
+pnpm dev
+```
 
 4. Öffne [http://localhost:3000](http://localhost:3000) im Browser
 
-### Farben ändern
+## 📝 Blog Posts erstellen
 
-Farben sind in `src/app/globals.css` definiert:## 📝 Blog Posts erstellen
+Blog Posts werden als Markdown-Dateien in `src/content/blog/` gespeichert.
 
+### Format
 
+Jeder Blog Post benötigt Frontmatter (YAML) am Anfang:
 
-```cssBlog Posts werden als Markdown-Dateien in `src/content/blog/` gespeichert.
-
-:root {
-
-  --accent: #0071e3;### Format
-
-  --accent-hover: #0077ed;
-
-  /* ... mehr Farben */Jeder Blog Post benötigt Frontmatter (YAML) am Anfang:
-
-}
-
-``````markdown
-
+```markdown
 ---
-
-### Deine Informationentitle: "Dein Post-Titel"
-
-- **Home Page**: `src/app/page.tsx`description: "Eine kurze Beschreibung"
-
-- **Footer**: `src/components/Footer.tsx`date: "2025-10-11"
-
-- **Navigation**: `src/components/Navigation.tsx`author: "Marc Wiemann"
-
-- **Metadata**: `src/app/layout.tsx`tags: ["Next.js", "React", "TypeScript"]
-
+title: "Dein Post-Titel"
+description: "Eine kurze Beschreibung"
+date: "2025-10-11"
+author: "Marc Wiemann"
+tags: ["Next.js", "React", "TypeScript"]
 featured: true
-
-### Projekte hinzufügen---
-
-Bearbeite das `projects` Array in `src/app/projects/page.tsx`
+---
 
 # Dein Content hier
 
-## 🚢 Deployment
-
 Schreibe deinen Blog-Inhalt mit Markdown...
+```
 
-### Vercel (Empfohlen)```
+### Neue Posts hinzufügen
 
-1. Push dein Repository zu GitHub
-
-2. Gehe zu [vercel.com](https://vercel.com)### Neue Posts hinzufügen
-
-3. Importiere dein Repository
-
-4. Vercel konfiguriert alles automatisch1. Erstelle eine neue `.md` Datei in `src/content/blog/`
-
-5. Deploy!2. Füge das Frontmatter hinzu
-
+1. Erstelle eine neue `.md` Datei in `src/content/blog/`
+2. Füge das Frontmatter hinzu
 3. Schreibe deinen Content
+4. Der Post erscheint automatisch in der Blog-Liste
 
-### Netlify4. Der Post erscheint automatisch in der Blog-Liste
+## 🎨 Anpassungen
 
-- Build Command: `npm run build`
+### Farben ändern
 
-- Publish Directory: `.next`## 🎨 Anpassungen
+Farben sind in `src/app/globals.css` definiert:
 
-
-
-### Build für Production### Farben ändern
-
-
-
-```bashFarben sind in `src/app/globals.css` definiert:
-
-npm run build
-
-npm start```css
-
-```:root {
-
+```css
+:root {
   --accent: #0071e3;
-
-## 🧹 Linting  --accent-hover: #0077ed;
-
+  --accent-hover: #0077ed;
   /* ... mehr Farben */
-
-```bash}
-
-# ESLint ausführen```
-
-npm run lint
+}
+```
 
 ### Deine Informationen
 
-# TypeScript Check
-
-npx tsc --noEmit- **Home Page**: Bearbeite `src/app/page.tsx`
-
-```- **Footer**: Bearbeite `src/components/Footer.tsx`
-
+- **Home Page**: Bearbeite `src/app/page.tsx`
+- **Footer**: Bearbeite `src/components/Footer.tsx`
 - **Navigation**: Bearbeite `src/components/Navigation.tsx`
+- **Metadata**: Bearbeite `src/app/layout.tsx`
 
-## 📦 Scripts- **Metadata**: Bearbeite `src/app/layout.tsx`
+### Projekte hinzufügen
 
-
-
-- `npm run dev` - Development Server mit Turbopack### Projekte hinzufügen
-
-- `npm run build` - Production Build erstellen
-
-- `npm start` - Production Server startenBearbeite das `projects` Array in `src/app/projects/page.tsx`:
-
-- `npm run lint` - ESLint ausführen
+Bearbeite das `projects` Array in `src/app/projects/page.tsx`:
 
 ```typescript
-
-## 🤝 Beitragenconst projects = [
-
+const projects = [
   {
-
-Contributions sind willkommen!    id: 1,
-
+    id: 1,
     title: 'Dein Projekt',
-
-1. Forke das Repository    description: 'Beschreibung...',
-
-2. Erstelle einen Feature Branch    tags: ['React', 'TypeScript'],
-
-3. Committe deine Changes    github: 'https://github.com/...',
-
-4. Push zum Branch    demo: 'https://demo.com',
-
-5. Öffne einen Pull Request    featured: true,
-
+    description: 'Beschreibung...',
+    tags: ['React', 'TypeScript'],
+    github: 'https://github.com/...',
+    demo: 'https://demo.com',
+    featured: true,
   },
-
-## 👤 Autor  // ... mehr Projekte
-
+  // ... mehr Projekte
 ];
+```
 
-**Marc Wiemann**```
-
-- Website: [marcwiemann.de](https://marcwiemann.de)
-
-- GitHub: [@marcwiemann](https://github.com/marcwiemann)## 🚢 Deployment
-
-- LinkedIn: [Marc Wiemann](https://linkedin.com/in/marcwiemann)
+## 🚢 Deployment
 
 ### Vercel (Empfohlen)
 
-## 🙏 Acknowledgments
-
 1. Push dein Repository zu GitHub
-
-- Design inspiriert von Apple's Design-System2. Gehe zu [vercel.com](https://vercel.com)
-
-- Icons von [Heroicons](https://heroicons.com/)3. Importiere dein Repository
-
-- Fonts von [Google Fonts](https://fonts.google.com/)4. Vercel konfiguriert alles automatisch
-
+2. Gehe zu [vercel.com](https://vercel.com)
+3. Importiere dein Repository
+4. Vercel konfiguriert alles automatisch
 5. Deploy!
-
-## 📄 Lizenz
 
 ### Netlify
 
-MIT License - Siehe LICENSE für Details
-
 1. Build Command: `npm run build`
-
----2. Publish Directory: `.next`
-
+2. Publish Directory: `.next`
 3. Environment Variables nach Bedarf setzen
-
-**Entwickelt mit ❤️ und Next.js**
 
 ### Andere Plattformen
 
@@ -390,6 +198,13 @@ npm run lint
 # TypeScript Check
 npx tsc --noEmit
 ```
+
+## 📦 Scripts
+
+- `npm run dev` - Development Server mit Turbopack
+- `npm run build` - Production Build erstellen
+- `npm start` - Production Server starten
+- `npm run lint` - ESLint ausführen
 
 ## 🤝 Beitragen
 
