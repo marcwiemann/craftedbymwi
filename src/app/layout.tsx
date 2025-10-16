@@ -38,7 +38,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={inter.variable}>
+    <html lang="de" className={inter.variable} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const theme = localStorage.getItem('theme') || 
+                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.classList.add(theme);
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
       <body className="antialiased">
         <ThemeProvider>
           <div className="flex flex-col min-h-screen">

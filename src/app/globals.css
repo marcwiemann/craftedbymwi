@@ -67,8 +67,30 @@
   --blur-lg: 24px;
 }
 
+/* Dark mode styles - applied when .dark class is on html element */
+.dark {
+  /* Dark mode colors */
+  --background: #000000;
+  --foreground: #f5f5f7;
+  --secondary: #1d1d1f;
+  --tertiary: #2c2c2e;
+  --accent: #0a84ff;
+  --accent-hover: #409cff;
+  --border: #38383a;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --shadow-lg: rgba(0, 0, 0, 0.5);
+  --card-bg: rgba(29, 29, 31, 0.8);
+  --glass-bg: rgba(29, 29, 31, 0.7);
+  
+  /* Text colors */
+  --text-primary: #f5f5f7;
+  --text-secondary: #a1a1a6;
+  --text-tertiary: #86868b;
+}
+
+/* Also support system preference as fallback */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.light) {
     /* Dark mode colors */
     --background: #000000;
     --foreground: #f5f5f7;
