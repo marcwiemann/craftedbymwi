@@ -103,8 +103,8 @@ export default function ContactPage() {
             Kontakt
           </h1>
           <p className="text-xl text-muted max-w-3xl mx-auto">
-            Hast du Fragen, ein Projekt im Sinn oder möchtest einfach nur Hallo sagen?
-            Ich freue mich auf deine Nachricht!
+            Interessiert an KI, Full-Stack-Projekten oder Neuroinformatics? 
+            Lass uns über deine Ideen sprechen oder einfach über Tech-Themen austauschen!
           </p>
         </div>
 
@@ -236,8 +236,8 @@ export default function ContactPage() {
                 Folge mir
               </h2>
               <p className="text-muted mb-6">
-                Verbinde dich mit mir auf Social Media und bleib auf dem Laufenden
-                über neue Projekte und Artikel.
+                Verbinde dich mit mir auf Social Media für Updates zu KI-Projekten, 
+                Home Automation, und Tech-Insights.
               </p>
               <div className="flex gap-4">
                 {socialLinks.map((social) => (
@@ -282,10 +282,11 @@ export default function ContactPage() {
                             <div className="space-y-4 text-sm">
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">
-                    Wie lange dauert ein typisches Projekt?
+                    Was sind deine Hauptinteressen?
                   </h3>
                   <p className="text-muted">
-                    Die Dauer variiert je nach Umfang, typischerweise zwischen 2-12 Wochen.
+                    KI & Machine Learning, Full-Stack mit C#/.NET, IoT/Home Automation, 
+                    und Neuroinformatics. Langfristig: BCI & Brain-Computer Interfaces.
                   </p>
                 </div>
                 <div>
@@ -293,17 +294,17 @@ export default function ContactPage() {
                     Arbeitest du remote?
                   </h3>
                   <p className="text-muted">
-                    Ja, ich arbeite hauptsächlich remote, bin aber auch für persönliche
-                    Meetings verfügbar.
+                    Ja, hauptsächlich remote. Für Projekte im Bereich MedTech, KI oder 
+                    interessante Tech-Challenges auch vor Ort möglich.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">
-                    Welche Technologien nutzt du?
+                    Welche Technologien nutzt du hauptsächlich?
                   </h3>
                   <p className="text-muted">
-                    Hauptsächlich React, Next.js, TypeScript, Node.js und moderne
-                    Cloud-Technologien.
+                    Backend: C#, .NET, ASP.NET Core, Python. Frontend: Blazor, React, Flutter. 
+                    AI: Local LLMs, Function Calling, NLP. IoT: Raspberry Pi, Home Assistant.
                   </p>
                 </div>
               </div>
